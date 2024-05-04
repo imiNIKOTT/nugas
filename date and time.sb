@@ -1,0 +1,16 @@
+GraphicsWindow.Width=300
+GraphicsWindow.Height=200
+GraphicsWindow.BackgroundColor= "black"
+GraphicsWindow.BrushColor= "white"
+While "true"
+  Program.Delay(1000)
+  draw()
+EndWhile
+Sub draw
+  GraphicsWindow.Clear()
+  GraphicsWindow.FontSize= 40
+  GraphicsWindow.DrawText(0, 10, Clock.Time)
+  GraphicsWindow.FontSize= 20
+  GraphicsWindow.DrawText(30, 60, Clock.Date)
+EndSub
+  
